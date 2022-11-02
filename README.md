@@ -1,2 +1,5 @@
-# dcl118-2022-nov-02
-DCL-118: Advanced C++
+# DCL-118: Advanced C++
+
+These projects are created as part of the following training: DCL-118 "Advanced C++"
+
+Please follow the link for the complete training catalog: https://www.deepcloudlabs.com/resources
