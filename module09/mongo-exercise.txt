@@ -1,0 +1,15 @@
+db.movies1.aggregate(
+        { $project: { "genres": 1} },
+        { $unwind: "$genres" },
+        { $group: { _id: "$genres.name" , total: { $sum: 1 } } }
+        )
+
+db.countries1.group(
+     {
+        "key": { "continent": 1},
+        "initial": {
+            "countries" : []
+        },
+        "reduce": function(country,doc){ doc.countries.push(country.name);}
+     }
+);
